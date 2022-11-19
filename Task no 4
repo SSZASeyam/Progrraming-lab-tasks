@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+using namespace std;
+void swap (int &x , int &y){
+x = x+y;
+y = x-y;
+x = x-y;
+}
+
+int main(){
+int a,b;
+cout << "Enter a number of x : ";
+cin >>a;
+cout<< "Enter a number of y: ";
+cin>>b;
+cout << "before swapping x is : "<<a << " and y is : "<<b<<endl;
+swap(a,b);
+cout<< "After swapping x is : "<<a<<" and y is : "<<b<<endl;
+return 0;
+}
