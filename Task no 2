@@ -1,0 +1,57 @@
+#include<bits/stdc++.h>
+using namespace std;
+//The function to find largest number
+int largest(int arr[],int n){
+int maximum = arr[0];
+for(int i=1 ; i<n ; i++)
+if(arr[i]>maximum)
+    maximum = arr[i];
+    return maximum ;
+}
+//The function to find smallest number
+int smallest (int arr[], int n){
+int minimum = arr  [0];
+for(int i =1 ; i<n;i++)
+    if(arr[i]<minimum)
+    minimum = arr[i];
+    return minimum;
+}
+//The function to find average number
+double average(int arr[],int n){
+int sum = 0;
+for (int i=0 ; i<n; i++)
+    sum+=arr[i];
+return (double)sum /n;
+}
+//For searching a specific value
+int search(int arr[], int N ,int x){
+int i;
+for(i=0;i<N;i++)
+    if(arr[i]==x)
+    return i;
+return -1;
+}
+int main(){
+int i, n, x;
+int arr[100];
+//Array input
+cout<< "Enter 1 to 100 nummber of element : ";
+cin>>n;
+cout<<"\n";
+for(i=0; i<n; ++i)
+{
+    cout<<"Enter number "<<i+1<<" : ";
+    cin>>arr[i];
+}
+//Largest number
+cout<< "Largest in given array is "<<largest(arr,n)<<endl;
+cout<< "Smallest in given array is "<<smallest(arr,n)<<endl;
+cout<< "Average in given array is "<<average(arr,n)<<endl;
+cout<< "Enter a number to search in the array : ";
+cin>>x;
+int ans = search(arr, n, x);
+(ans == -1);
+cout<<"Element is not present in array"<<endl;
+cout<< "Element is present at index "<<ans<<endl;
+return 0;
+}
