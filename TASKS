@@ -1,0 +1,18 @@
+1. Define a function named fact() to calculate factorial of a number n and then 
+write a program that uses the return value of function fact() to calculate 
+combination and permutation. 
+2. Define a function which will find the biggest, smallest and average value form
+an array and search for a specific value.
+Hint: Create a function with two parameters, first one is a array and second one is the 
+value that we want to search. Call the function like: function_name(arr, 2) . we will 
+pass the array named arr and the value to the function. Inside the function we will 
+search for 2 and find the biggest, smallest, and average from the arr.
+In the main function we will take input to store the value to the array named 
+arr. Then call the function. 
+3. Create functions to find the gcd and lcm of two nonnegative integer values and 
+to return the result 
+4. Write a function to swap the value between two number using call by reference.
+5. Write a C++ Program to find Prime Numbers between two numbers. C++ 
+program to find prime numbers between 1 and n. 
+Hint: call the function with two argument for example: function_name(1,10). It will 
+find the prime numbers between 1 to 10
